@@ -11,7 +11,8 @@ node('built-in')
     stage('Continuous Deployment') 
 	{
 sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/webapp/target/webapp.war   ubuntu@172.31.26.217:/var/lib/tomcat8/webapps/qaenv.war'
-	echo " successful deployment the artificat "
+	echo " successful deployment the artificat " 
+	echo "ok "
 	}
     stage('Continuous Testing') 
 	{
@@ -23,4 +24,4 @@ sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/ScriptedPipeline/weba
 	}
 }
 
-#############
+############# ok
